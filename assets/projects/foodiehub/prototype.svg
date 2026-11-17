@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2400" height="1350" viewBox="0 0 2400 1350" role="img" aria-label="Prototype — placeholder">
+  <defs>
+    <radialGradient id="g" cx="78%" cy="18%" r="75%"><stop offset="0" stop-color="#ffb020" stop-opacity=".55"/><stop offset=".45" stop-color="#1a1204" stop-opacity=".9"/><stop offset="1" stop-color="#0a0a0a"/></radialGradient>
+    <pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#0a0a0a"/>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#p)"/>
+  <circle cx="1920" cy="972" r="378" fill="none" stroke="#fff" stroke-opacity=".08"/>
+  <circle cx="1920" cy="972" r="243" fill="none" stroke="#ffb020" stroke-opacity=".35"/>
+  <rect x="144" y="135" width="216" height="48" rx="24" fill="#fff" fill-opacity=".08" stroke="#fff" stroke-opacity=".15"/>
+  <text x="168" y="168" font-family="Space Grotesk, Inter, sans-serif" font-size="20" letter-spacing="2" fill="#fff" fill-opacity=".7">PLACEHOLDER</text>
+  <text x="144" y="837" font-family="Inter, -apple-system, sans-serif" font-weight="650" font-size="101" letter-spacing="-1.5" fill="#fff">Prototype</text>
+  <text x="144" y="927" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#fff" fill-opacity=".55">Prototype flow or recording (16:9)</text>
+  <text x="144" y="1215" font-family="Space Grotesk, monospace" font-size="20" fill="#fff" fill-opacity=".4">Replace: assets/projects/foodiehub/prototype.svg · 2400×1350px</text>
+</svg>

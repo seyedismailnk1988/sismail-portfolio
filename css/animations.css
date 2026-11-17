@@ -1,0 +1,63 @@
+/* ==========================================================================
+   animations.css — keyframes, reveal states, page transitions
+   All motion is disabled under prefers-reduced-motion (bottom of file).
+   ========================================================================== */
+
+@keyframes route { to { stroke-dashoffset: -24; } }
+@keyframes loadbar { 0% { transform: translateX(-100%); } 100% { transform: translateX(260%); } }
+@keyframes float-a { 0%, 100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+@keyframes float-b { 0%, 100% { translate: 0 0; } 50% { translate: 0 8px; } }
+@keyframes glow-drift { 0%, 100% { transform: translate(0, 0) scale(1); } 50% { transform: translate(-40px, 30px) scale(1.08); } }
+@keyframes scroll-cue { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+@keyframes line-up { from { transform: translateY(105%); } to { transform: translateY(0); } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+@keyframes pulse-dot { 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.5); } 50% { box-shadow: 0 0 0 6px rgba(255, 59, 48, 0); } }
+
+.stage__float--pay { animation: float-a 7s ease-in-out infinite; }
+.stage__float--points { animation: float-b 8s ease-in-out infinite; }
+.stage__orb { animation: float-a 9s ease-in-out infinite; }
+.hero .ambient__glow--1 { animation: glow-drift 16s ease-in-out infinite; }
+.hero__scroll i { animation: scroll-cue 2.4s var(--ease-in-out) infinite; }
+.role.is-current::before { animation: pulse-dot 2.4s ease-in-out infinite; }
+
+/* Hero headline: lines slide up once the loader finishes */
+.js .hero__title .line > span { transform: translateY(105%); }
+.is-loaded .hero__title .line > span { animation: line-up 1.1s var(--ease) forwards; }
+.is-loaded .hero__title .line:nth-child(2) > span { animation-delay: 0.08s; }
+.is-loaded .hero__title .line:nth-child(3) > span { animation-delay: 0.16s; }
+.is-loaded .hero__title .line:nth-child(4) > span { animation-delay: 0.24s; }
+.js .hero [data-hero-fade] { opacity: 0; }
+.is-loaded .hero [data-hero-fade] { animation: fade-up 1s var(--ease) forwards; animation-delay: calc(0.35s + var(--d, 0s)); }
+
+/* Scroll reveals — elements start hidden only when JS is running */
+.js [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity 1s var(--ease), transform 1.1s var(--ease); transition-delay: var(--delay, 0s); }
+.js [data-reveal="fade"] { transform: none; }
+.js [data-reveal="scale"] { transform: scale(0.96); }
+.js [data-reveal].is-inview { opacity: 1; transform: none; }
+
+/* Image reveal — a curtain wipes away */
+.js [data-reveal-img] { position: relative; overflow: hidden; }
+.js [data-reveal-img]::before { content: ""; position: absolute; inset: 0; z-index: 2; background: var(--bg-2); transform-origin: top; transition: transform 1.2s var(--ease-in-out); }
+.js [data-reveal-img] img { transform: scale(1.12); transition: transform 1.6s var(--ease); }
+.js [data-reveal-img].is-inview::before { transform: scaleY(0); }
+.js [data-reveal-img].is-inview img { transform: scale(1); }
+
+/* Page transitions between pages */
+.page-fade { position: fixed; inset: 0; z-index: 140; pointer-events: none; background: var(--bg); opacity: 0; transition: opacity 0.45s var(--ease); }
+.is-leaving .page-fade { opacity: 1; }
+
+/* Filter transitions for project cards */
+.project-card.is-filtering { animation: fade-up 0.6s var(--ease) both; }
+
+/* ---------- Reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; transition-delay: 0s !important; }
+  .js [data-reveal], .js .hero [data-hero-fade] { opacity: 1 !important; transform: none !important; }
+  .js .hero__title .line > span { transform: none !important; }
+  .js [data-reveal-img]::before { display: none; }
+  .js [data-reveal-img] img { transform: none !important; }
+  .stage__scene { transform: rotateX(6deg) rotateY(-14deg) !important; }
+  .ui-route { animation: none; }
+  .cursor { display: none; }
+}
