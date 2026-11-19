@@ -13,14 +13,6 @@
 @keyframes fade-up { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 @keyframes pulse-dot { 0%, 100% { box-shadow: 0 0 0 0 rgba(255, 59, 48, 0.5); } 50% { box-shadow: 0 0 0 6px rgba(255, 59, 48, 0); } }
 
-<<<<<<< HEAD
-.stage__float--pay { animation: float-a 7s ease-in-out infinite; }
-.stage__float--points { animation: float-b 8s ease-in-out infinite; }
-.stage__orb { animation: float-a 9s ease-in-out infinite; }
-.hero .ambient__glow--1 { animation: glow-drift 16s ease-in-out infinite; }
-.hero__scroll i { animation: scroll-cue 2.4s var(--ease-in-out) infinite; }
-=======
->>>>>>> 775ac49 (Updated portfolio website)
 .role.is-current::before { animation: pulse-dot 2.4s ease-in-out infinite; }
 
 /* Hero headline: lines slide up once the loader finishes */
@@ -50,11 +42,7 @@
 .is-leaving .page-fade { opacity: 1; }
 
 /* Filter transitions for project cards */
-<<<<<<< HEAD
-.project-card.is-filtering { animation: fade-up 0.6s var(--ease) both; }
-=======
 .pcard.is-filtering { animation: fade-up 0.6s var(--ease) both; }
->>>>>>> 775ac49 (Updated portfolio website)
 
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
@@ -64,10 +52,6 @@
   .js .hero__title .line > span { transform: none !important; }
   .js [data-reveal-img]::before { display: none; }
   .js [data-reveal-img] img { transform: none !important; }
-<<<<<<< HEAD
-  .stage__scene { transform: rotateX(6deg) rotateY(-14deg) !important; }
-=======
->>>>>>> 775ac49 (Updated portfolio website)
   .ui-route { animation: none; }
   .cursor { display: none; }
 }

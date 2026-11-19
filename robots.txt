@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seyedismail.com/sitemap.xml
+Sitemap: https://seyed-ismail-portfolio.vercel.app/sitemap.xml

@@ -84,12 +84,8 @@
         parallax.forEach(function (el) {
           var speed = parseFloat(el.getAttribute("data-parallax")) || 0.1;
           var rect = el.getBoundingClientRect();
-<<<<<<< HEAD
-          var offset = (rect.top + rect.height / 2 - vh / 2) * speed;
-=======
           if (rect.bottom < -200 || rect.top > vh + 200) return;
           var offset = Math.max(-60, Math.min(60, (rect.top + rect.height / 2 - vh / 2) * speed));
->>>>>>> 775ac49 (Updated portfolio website)
           el.style.transform = "translate3d(0," + offset.toFixed(1) + "px,0)";
         });
       }

@@ -3,18 +3,11 @@
    ========================================================================== */
 
 @media (max-width: 1100px) {
-<<<<<<< HEAD
-  .nav__links a { padding: 8px 10px; }
-  .stats__grid { grid-template-columns: repeat(3, 1fr); }
-  .stat:nth-child(4) { border-left: 0; padding-left: 0; }
-  .stat:nth-child(n + 4) { border-top: 1px solid var(--border); }
-=======
   /* Tablet: cards move below the portrait so they never cover the face */
   .hero__portrait img { height: clamp(360px, 46vw, 480px); }
   .hero-cards { position: relative; left: auto; right: auto; bottom: auto; width: calc(100% + var(--gutter) * 2 - 24px); margin: -40px 0 12px; grid-template-columns: repeat(4, 1fr); align-items: stretch; }
   .hero-card--center { grid-column: 1 / -1; grid-row: 1; justify-self: center; width: min(360px, 100%); }
   .nav__links a { padding: 8px 10px; }
->>>>>>> 775ac49 (Updated portfolio website)
   .process { grid-template-columns: repeat(4, 1fr); row-gap: 40px; }
   .process__line { display: none; }
   .cap-grid { grid-template-columns: repeat(2, 1fr); }
@@ -27,29 +20,11 @@
 @media (max-width: 960px) {
   .nav__links, .nav__actions .btn { display: none; }
   .nav__toggle { display: inline-flex; }
-<<<<<<< HEAD
-  .nav__inner { padding: 0 8px 0 18px; }
-=======
   .nav__inner { padding: 0 8px 0 10px; }
->>>>>>> 775ac49 (Updated portfolio website)
 }
 
 @media (max-width: 860px) {
   :root { --nav-h: 58px; }
-<<<<<<< HEAD
-  .hero { min-height: auto; padding-top: calc(var(--nav-h) + 64px); }
-  .hero__grid { grid-template-columns: 1fr; }
-  .stage { max-width: 360px; width: 86%; margin: 48px auto 0; aspect-ratio: 1 / 1.1; }
-  .stage__scene { --rx: 5deg; --ry: -8deg; }
-  .stage__float--points { left: -2%; width: 44%; }
-  .stage__float--pay { right: -4%; width: 50%; }
-  .stage__orb { top: 2%; right: 4%; width: 14%; }
-  .float-value { font-size: 1.05rem; }
-  .hero__scroll { display: none; }
-  .project-card, .project-card--feature { grid-column: span 12; }
-  .project-card--feature .project-card__media { aspect-ratio: 16 / 10; }
-  .project-card--feature .project-card__body { grid-template-columns: 1fr; }
-=======
   .hero { min-height: auto; padding-top: calc(var(--nav-h) + 56px); }
   .hero__portrait { padding-top: 20px; }
   .hero__portrait img { height: auto; width: min(118vw, 520px); }
@@ -60,7 +35,6 @@
   .work-grid { grid-template-columns: minmax(0, 1fr); }
   .pcard--split, .pcard--split.pcard--rev { grid-template-columns: 1fr; grid-template-areas: "text" "media" "foot"; }
   .pcard--split .pcard__text { text-align: center; justify-items: center; padding-bottom: 0; }
->>>>>>> 775ac49 (Updated portfolio website)
   .about__grid { grid-template-columns: 1fr; }
   .portrait { position: relative; top: 0; max-width: 420px; }
   .role__head { grid-template-columns: 1fr auto; }
@@ -82,15 +56,6 @@
 }
 
 @media (max-width: 560px) {
-<<<<<<< HEAD
-  .stats__grid { grid-template-columns: repeat(2, 1fr); }
-  .stat { padding: 26px 16px 26px 0; border-left: 0; }
-  .stat:nth-child(even) { padding-left: 16px; border-left: 1px solid var(--border); }
-  .stat:nth-child(n + 3) { border-top: 1px solid var(--border); }
-  .stat:nth-child(4) { padding-left: 16px; border-left: 1px solid var(--border); }
-  .stat:last-child { grid-column: span 2; border-left: 0; padding-left: 0; }
-  .hero__ctas .btn { flex: 1 1 100%; }
-=======
   .hero__title { font-size: clamp(1.75rem, 8.4vw, 2.4rem); }
   .hero-card { padding: 14px; }
   .panel { margin: 8px; }
@@ -98,16 +63,11 @@
   .pcard__facts { gap: 8px 18px; }
   .pcard__foot { justify-content: center; }
   .hero__ctas .btn:not(.btn--text) { flex: 1 1 100%; }
->>>>>>> 775ac49 (Updated portfolio website)
   .process { grid-template-columns: 1fr 1fr; }
   .cap-grid { grid-template-columns: 1fr; }
   .cap--wide { grid-column: auto; }
   .facts { grid-template-columns: 1fr; }
   .form__row { grid-template-columns: 1fr; gap: 0; }
-<<<<<<< HEAD
-  .project-card__body { padding: 22px 20px 24px; }
-=======
->>>>>>> 775ac49 (Updated portfolio website)
   .card-grid, .card-grid--3, .compare { grid-template-columns: 1fr; }
   .impact { grid-template-columns: 1fr; }
   .chain { grid-template-columns: 1fr; }
@@ -118,9 +78,5 @@
 }
 
 @media (hover: none) {
-<<<<<<< HEAD
-  .project-card__inner { transform: none !important; }
-=======
   .pcard:hover { transform: none; box-shadow: none; }
->>>>>>> 775ac49 (Updated portfolio website)
 }

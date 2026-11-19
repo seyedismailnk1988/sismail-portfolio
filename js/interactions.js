@@ -147,11 +147,6 @@
     }
 
     /* ---------- Contact form ----------
-<<<<<<< HEAD
-       If the form has a data-endpoint (e.g. a Formspree URL) it POSTs there.
-       Without one it falls back to opening the visitor's email app with the
-       message pre-filled, so the form always works on static hosting. */
-=======
        Delivers enquiries to your inbox from a static site — no server needed.
 
        data-provider="formsubmit" (default)
@@ -163,7 +158,6 @@
          /email-template/portfolio-enquiry.html. Add data-emailjs-service,
          data-emailjs-template and data-emailjs-key to the <form>.
        If sending fails, the visitor's email app opens with the message ready. */
->>>>>>> 775ac49 (Updated portfolio website)
     var form = document.querySelector("[data-contact-form]");
     if (form) {
       var statusEl = form.querySelector(".form__status");
@@ -188,30 +182,6 @@
         return ok;
       }
       form.querySelectorAll("input, textarea").forEach(function (f) {
-<<<<<<< HEAD
-        f.addEventListener("input", function () { if (f.closest(".field") && f.closest(".field").hasAttribute("data-invalid")) setError(f, ""); });
-      });
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        statusEl.className = "form__status"; statusEl.textContent = "";
-        if (form.querySelector(".hp input") && form.querySelector(".hp input").value) return; // bot
-        if (!validate()) return;
-        var data = {
-          name: form.name.value.trim(), email: form.email.value.trim(),
-          company: form.company ? form.company.value.trim() : "", topic: form.topic ? form.topic.value : "",
-          message: form.message.value.trim()
-        };
-        var endpoint = form.getAttribute("data-endpoint");
-        if (!endpoint) {
-          var to = form.getAttribute("data-mailto") || "sismail77@gmail.com";
-          var subject = "Portfolio enquiry" + (data.topic ? " — " + data.topic : "") + " from " + data.name;
-          var body = data.message + "\n\n— " + data.name + (data.company ? ", " + data.company : "") + "\n" + data.email;
-          window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-          statusEl.classList.add("is-success");
-          statusEl.textContent = "Your email app should open with the message ready to send. If it doesn't, email " + to + " directly.";
-          return;
-        }
-=======
         f.addEventListener("input", function () { var w = f.closest(".field"); if (w && w.hasAttribute("data-invalid")) setError(f, ""); });
       });
       function mailtoFallback(d) {
@@ -258,25 +228,10 @@
           sentAt: new Date().toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" })
         };
         d.subject = "Portfolio enquiry: " + d.topic + " from " + d.name + (d.company ? " (" + d.company + ")" : "");
->>>>>>> 775ac49 (Updated portfolio website)
         submitBtn.disabled = true;
         var label = submitBtn.querySelector("span");
         var original = label ? label.textContent : "";
         if (label) label.textContent = "Sending…";
-<<<<<<< HEAD
-        fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
-          .then(function (res) {
-            if (!res.ok) throw new Error("Request failed");
-            form.reset();
-            statusEl.classList.add("is-success");
-            statusEl.textContent = "Thank you — your message has been sent. I'll reply within two working days.";
-          })
-          .catch(function () {
-            statusEl.classList.add("is-error");
-            statusEl.textContent = "Something went wrong sending your message. Please email sismail77@gmail.com directly.";
-          })
-          .then(function () { submitBtn.disabled = false; if (label) label.textContent = original; });
-=======
         send(d).then(function () {
           form.reset();
           statusEl.classList.add("is-success");
@@ -286,7 +241,6 @@
           statusEl.textContent = "Your message couldn't be sent automatically, so your email app is opening with it ready to send. You can also email sismail77@gmail.com directly.";
           mailtoFallback(d);
         }).then(function () { submitBtn.disabled = false; if (label) label.textContent = original; });
->>>>>>> 775ac49 (Updated portfolio website)
       });
     }
   });
