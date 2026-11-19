@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="JLL Real Estate Platform — placeholder">
   <defs>
     <radialGradient id="g" cx="78%" cy="18%" r="75%"><stop offset="0" stop-color="#ff4700" stop-opacity=".55"/><stop offset=".45" stop-color="#1a0a05" stop-opacity=".9"/><stop offset="1" stop-color="#0a0a0a"/></radialGradient>
@@ -13,4 +14,12 @@
   <text x="96" y="620" font-family="Inter, -apple-system, sans-serif" font-weight="650" font-size="75" letter-spacing="-1.5" fill="#fff">JLL Real Estate Platform</text>
   <text x="96" y="687" font-family="Inter, -apple-system, sans-serif" font-size="18" fill="#fff" fill-opacity=".55">Cover image — hero screen or device mockup</text>
   <text x="96" y="900" font-family="Space Grotesk, monospace" font-size="15" fill="#fff" fill-opacity=".4">Replace: assets/projects/jll/cover.svg · 1600×1000px</text>
+=======
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="1000" viewBox="0 0 2000 1000" role="img" aria-label="JLL Real Estate Platform — device mockup placeholder">
+  <defs>
+    <linearGradient id="s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#eef0ee"/></linearGradient>
+    <radialGradient id="gl" cx="85%" cy="0%" r="90%"><stop offset="0" stop-color="#ff4700" stop-opacity=".35"/><stop offset="1" stop-color="#ff4700" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect x="120.0" y="100.0" width="1480.0" height="800.0" rx="36.0" fill="#121212"/><rect x="144.0" y="124.0" width="1432.0" height="752.0" rx="16.0" fill="url(#s)"/><rect x="144.0" y="124.0" width="1432.0" height="752.0" rx="16.0" fill="url(#gl)"/><text x="860.0" y="469.92" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-weight="650" font-size="107" letter-spacing="-0.5" fill="#10180b">JLL Real Estate Platform</text><text x="860.0" y="598.32" text-anchor="middle" font-family="Inter, sans-serif" font-size="44" fill="#10180b" fill-opacity=".55">Device mockup with real screens</text><path d="M20.0 900.0 H1700.0 l-40.0 35.0 H60.0 z" fill="#1d1d1f"/><rect x="1540.0" y="220.0" width="380.0" height="780.0" rx="60.800000000000004" fill="#121212"/><rect x="1559.0" y="239.0" width="342.0" height="742.0" rx="45.6" fill="url(#s)"/><rect x="1559.0" y="239.0" width="342.0" height="742.0" rx="45.6" fill="url(#gl)"/>
+>>>>>>> 775ac49 (Updated portfolio website)
 </svg>

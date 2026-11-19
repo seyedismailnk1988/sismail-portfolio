@@ -1,0 +1,124 @@
+/* ==========================================================================
+   themes.css — colour themes
+   --------------------------------------------------------------------------
+   Pick a theme by setting data-theme on the <html> tag of every page:
+     <html lang="en" data-theme="midnight">
+   Available: sky-light (default — sky gradient + lime) · obsidian (original
+              red) · midnight · apple-light · emerald · sand-light · violet
+   To make your own, copy a block, rename it and change the values.
+   *-rgb values are the same colour written as "R, G, B" (used for tints).
+   ========================================================================== */
+
+/* 0 — Sky & Lime (default) : airy sky gradient, ink text, lime accents */
+html[data-theme="sky-light"] {
+  color-scheme: light;
+  --page: #e9ebec;
+  --bg: #ffffff; --bg-2: #f5f6f6; --card: #f5f6f6; --card-2: #eceeee;
+  --bg-rgb: 255, 255, 255; --surface-rgb: 255, 255, 255; --fg-rgb: 16, 24, 11;
+  --accent: #a6ec1c; --accent-rgb: 166, 236, 28;
+  --accent-2: #74c80f; --accent-2-rgb: 116, 200, 15;
+  --accent-soft: #3f6b00; --accent-ink: #3f6b00; --on-accent: #10180b;
+  --text: #10180b; --text-2: #4c5548; --text-3: #7c8478;
+  --border: rgba(16, 24, 11, 0.09); --border-strong: rgba(16, 24, 11, 0.16);
+  --glass: rgba(255, 255, 255, 0.74);
+  --input-bg: #ffffff;
+  --nav-pill: rgba(255, 255, 255, 0.36);
+  --hero-bg: linear-gradient(180deg, #9cb2ca 0%, #b9c8d8 20%, #d9e1e8 48%, #e9ece9 74%, #e2e6dc 100%);
+  --hero-ground: radial-gradient(70% 70% at 50% 100%, rgba(116, 140, 88, 0.30), transparent 70%);
+  --shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--border);
+  --ok: #2b7a3d; --info: #0b6b8f; --warn: #a14f00; --review: #7a5800;
+  --grain: 0.022;
+}
+html[data-theme="sky-light"] .wordmark__mark { background: var(--text); color: var(--accent); box-shadow: none; }
+html[data-theme="sky-light"] .cs-hero .ambient { display: none; }
+html[data-theme="sky-light"] .impact__bar i,
+html[data-theme="sky-light"] .process__line i,
+html[data-theme="sky-light"] .timeline__progress { background: linear-gradient(90deg, var(--accent-2), var(--accent)); }
+
+/* 1 — Obsidian Red (original) : defaults live in style.css :root */
+html[data-theme="obsidian"] { color-scheme: dark; --page: #030303; }
+
+/* 2 — Midnight Blue : calm, corporate, fintech-friendly */
+html[data-theme="midnight"] {
+  --page: #04060c;
+  color-scheme: dark;
+  --bg: #070a12; --bg-2: #0c111c; --card: #121826; --card-2: #182033;
+  --bg-rgb: 7, 10, 18; --surface-rgb: 22, 28, 42;
+  --accent: #4f8cff; --accent-rgb: 79, 140, 255;
+  --accent-2: #7c6cff; --accent-2-rgb: 124, 108, 255;
+  --accent-soft: #8fb4ff; --on-accent: #ffffff;
+  --text: #f5f7fb; --text-2: #9aa4b8; --text-3: #6b7489;
+  --glass: rgba(14, 19, 32, 0.66);
+}
+
+/* 3 — Apple Light : bright, clean, editorial */
+html[data-theme="apple-light"] {
+  --accent-ink: #0066cc; --nav-pill: rgba(255, 255, 255, 0.6);
+  --page: #f0f0f2;
+  color-scheme: light;
+  --bg: #ffffff; --bg-2: #f5f5f7; --card: #fbfbfd; --card-2: #f0f0f3;
+  --bg-rgb: 255, 255, 255; --surface-rgb: 255, 255, 255; --fg-rgb: 0, 0, 0;
+  --accent: #0071e3; --accent-rgb: 0, 113, 227;
+  --accent-2: #2997ff; --accent-2-rgb: 41, 151, 255;
+  --accent-soft: #0066cc; --on-accent: #ffffff;
+  --text: #1d1d1f; --text-2: #5f5f66; --text-3: #86868b;
+  --border: rgba(0, 0, 0, 0.09); --border-strong: rgba(0, 0, 0, 0.16);
+  --glass: rgba(255, 255, 255, 0.72);
+  --input-bg: #ffffff;
+  --shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.18), 0 0 0 1px var(--border);
+  --ok: #248a3d; --info: #0071a4; --warn: #b25000; --review: #8a6100;
+  --grain: 0.025;
+}
+
+/* 4 — Emerald Graphite : fresh, confident, growth */
+html[data-theme="emerald"] {
+  --page: #050706;
+  color-scheme: dark;
+  --bg: #090b0a; --bg-2: #0f1311; --card: #151a17; --card-2: #1b211d;
+  --bg-rgb: 9, 11, 10; --surface-rgb: 24, 30, 27;
+  --accent: #1fc77e; --accent-rgb: 31, 199, 126;
+  --accent-2: #8bdc5a; --accent-2-rgb: 139, 220, 90;
+  --accent-soft: #6be0a8; --on-accent: #04140c;
+  --text: #f4f7f5; --text-2: #9ba8a1; --text-3: #6c7872;
+  --glass: rgba(18, 23, 20, 0.66);
+}
+
+/* 5 — Warm Sand Light : warm, human, premium print feel */
+html[data-theme="sand-light"] {
+  --accent-ink: #a8420f; --nav-pill: rgba(255, 255, 255, 0.5);
+  --page: #ebe3d7;
+  color-scheme: light;
+  --bg: #f7f2ea; --bg-2: #efe7dc; --card: #fffbf5; --card-2: #f3ece2;
+  --bg-rgb: 247, 242, 234; --surface-rgb: 255, 251, 245; --fg-rgb: 28, 25, 23;
+  --accent: #c4501b; --accent-rgb: 196, 80, 27;
+  --accent-2: #e07b39; --accent-2-rgb: 224, 123, 57;
+  --accent-soft: #a8420f; --on-accent: #ffffff;
+  --text: #1c1917; --text-2: #5c544d; --text-3: #8a8077;
+  --border: rgba(28, 25, 23, 0.10); --border-strong: rgba(28, 25, 23, 0.18);
+  --glass: rgba(255, 251, 245, 0.72);
+  --input-bg: #fffdf9;
+  --shadow: 0 30px 60px -30px rgba(60, 40, 20, 0.22), 0 0 0 1px var(--border);
+  --ok: #2f7a3e; --info: #1f6f8b; --warn: #a3520b; --review: #8a6100;
+  --grain: 0.04;
+}
+
+/* 6 — Violet Night : creative, bold, studio */
+html[data-theme="violet"] {
+  --page: #06050a;
+  color-scheme: dark;
+  --bg: #0a0910; --bg-2: #100e18; --card: #161321; --card-2: #1d1929;
+  --bg-rgb: 10, 9, 16; --surface-rgb: 26, 22, 38;
+  --accent: #8b5cf6; --accent-rgb: 139, 92, 246;
+  --accent-2: #e45bb5; --accent-2-rgb: 228, 91, 181;
+  --accent-soft: #b9a0ff; --on-accent: #ffffff;
+  --text: #f6f4fb; --text-2: #a39fb4; --text-3: #716c85;
+  --glass: rgba(20, 17, 30, 0.66);
+}
+
+/* Light themes: softer glow and lighter shadows */
+html[data-theme$="-light"] .ambient__glow { opacity: 0.28; }
+html[data-theme$="-light"] .hero .ambient__glow--2 { opacity: 0.12; }
+html[data-theme$="-light"] .nav.is-scrolled .nav__inner { box-shadow: 0 10px 30px -14px rgba(0, 0, 0, 0.18); }
+html[data-theme$="-light"] .cursor { background: #000; mix-blend-mode: normal; }
+html[data-theme$="-light"] .cursor.is-visible { opacity: 0.6; }
+html[data-theme$="-light"] .loader__bar { background: rgba(0, 0, 0, 0.1); }

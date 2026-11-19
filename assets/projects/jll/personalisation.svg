@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500" role="img" aria-label="Personalised recommendations &amp; premium listings — placeholder">
   <defs>
+<<<<<<< HEAD
     <radialGradient id="g" cx="78%" cy="18%" r="75%"><stop offset="0" stop-color="#ff4700" stop-opacity=".55"/><stop offset=".45" stop-color="#1a0a05" stop-opacity=".9"/><stop offset="1" stop-color="#0a0a0a"/></radialGradient>
     <pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="#fff" stroke-opacity=".045"/></pattern>
   </defs>
@@ -13,4 +14,19 @@
   <text x="72" y="930" font-family="Inter, -apple-system, sans-serif" font-weight="650" font-size="90" letter-spacing="-1.5" fill="#fff">Personalised recommendations &amp; premium listings</text>
   <text x="72" y="1011" font-family="Inter, -apple-system, sans-serif" font-size="21" fill="#fff" fill-opacity=".55">Recommendations module and premium listing card (4:5)</text>
   <text x="72" y="1350" font-family="Space Grotesk, monospace" font-size="17" fill="#fff" fill-opacity=".4">Replace: assets/projects/jll/personalisation.svg · 1200×1500px</text>
+=======
+    <radialGradient id="g" cx="80%" cy="15%" r="80%"><stop offset="0" stop-color="#ff4700" stop-opacity=".30"/><stop offset=".6" stop-color="#ff4700" stop-opacity=".04"/><stop offset="1" stop-color="#f1f3f2" stop-opacity="0"/></radialGradient>
+    <pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="#10180b" stroke-opacity=".045"/></pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="#f1f3f2"/>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#p)"/>
+  <circle cx="960" cy="1080" r="336" fill="none" stroke="#10180b" stroke-opacity=".08"/>
+  <circle cx="960" cy="1080" r="216" fill="none" stroke="#ff4700" stroke-opacity=".35"/>
+  <rect x="72" y="150" width="189" height="42" rx="21" fill="#10180b" fill-opacity=".9"/>
+  <text x="93" y="179" font-family="Space Grotesk, Inter, sans-serif" font-size="17" letter-spacing="2" fill="#a6ec1c">PLACEHOLDER</text>
+  <text x="72" y="930" font-family="Inter, -apple-system, sans-serif" font-weight="650" font-size="90" letter-spacing="-1.5" fill="#10180b">Personalised recommendations &amp; premium listings</text>
+  <text x="72" y="1011" font-family="Inter, -apple-system, sans-serif" font-size="21" fill="#10180b" fill-opacity=".6">Recommendations module and premium listing card (4:5)</text>
+  <text x="72" y="1350" font-family="Space Grotesk, monospace" font-size="17" fill="#10180b" fill-opacity=".45">Replace: assets/projects/jll/personalisation.svg · 1200×1500px</text>
+>>>>>>> 775ac49 (Updated portfolio website)
 </svg>

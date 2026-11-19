@@ -16,27 +16,49 @@ This lists what still needs **your** input before the site goes public. Everythi
 | 8 | **JLL "check-in / hosts" content** | JLL case study → Property Information Guide | This language reads like a short-stay or hospitality product. Confirm it belongs to the JLL platform. |
 | 9 | **JLL bounce-rate chart** | Old portfolio | The old chart shows "5% → 15%", which reads like an increase. Don't reuse it as it is. |
 | 10 | **Citibank ownership** | Citibank case study | Confirm which deliverables you personally designed or led. |
+<<<<<<< HEAD
 | 11 | **Project roles and type** | FoodieHub, FireBoost, TrekXplore, Donut Delights | Roles aren't stated on the old site. Confirm your role and whether each was a client project or a concept. The Donut Delights year is missing. |
 | 12 | **WingFlight** | Homepage card ("In preparation") | Only a title and dates exist. Supply the details or remove the card. |
 | 13 | **Travel Sailo measured results** | Travel Sailo case study | The CV says iterations were A/B tested in Amplitude but gives no figures. Add any results you're allowed to share. Until then, they're labelled "figure to add". |
 | 14 | **Travel Sailo screen rationale** | Travel Sailo → screen-by-screen | Written as design rationale from your documented scope. Check every point against your final screens and rewrite it in your own words where needed. |
+=======
+| 13 | **Travel Sailo measured results** | Travel Sailo case study | The CV says iterations were A/B tested in Amplitude but gives no figures. Add any results you're allowed to share. Until then, they're labelled "figure to add". |
+| 14 | **Travel Sailo screen rationale** | Travel Sailo → screen-by-screen | The "What changed" points now describe what your app screenshots show. The "Why" points are still design rationale written from your CV, so check them and rewrite in your own words where needed. |
+>>>>>>> 775ac49 (Updated portfolio website)
 | 15 | **Research sample sizes** | Travel Sailo | The number of driver interviews and usability sessions. |
 | 16 | **IA diagrams** | Travel Sailo, JLL | Sketched from the documented scope. Replace with your real sitemaps. |
 | 17 | **Learnings** | Travel Sailo, JLL | Suggested wording. Rewrite these in your own voice. |
 
 **Old Wix site:** its footer says "© 2023 by ROGER FORBES", and its social icons link to Wix's own accounts. Fix or retire that site so recruiters don't see the template credit.
 
+<<<<<<< HEAD
 ## 2. Links to confirm
+=======
+## 2. Contact form: one-time step
+After the site goes live, send one test message through the contact form, then click **"Activate Form"** in the email FormSubmit sends to sismail77@gmail.com (check spam). Until you do, enquiries won't be delivered.
+
+## 2b. Links to confirm
+>>>>>>> 775ac49 (Updated portfolio website)
 - LinkedIn: https://www.linkedin.com/in/seyed-ismail-nizam-kareem
 - Behance: https://www.behance.net/seyedismail
 - Email: sismail77@gmail.com
 
 ## 3. Images to supply
 
+<<<<<<< HEAD
+=======
+Your portrait is done: the hero uses a background-removed cutout of your photo, and the About section uses a 4:5 crop of it.
+
+Travel Sailo now uses your nine passenger-app screenshots for the homepage card, the case-study hero, four screen-by-screen visuals (search, ride selection and checkout, payment and wallet, driver search) and a nine-step journey strip. The images still needed for Travel Sailo are BNPL (Tabby/Tamara), driver onboarding, research, wireframes, exploration and prototype.
+
+FoodieHub, FireBoost, TrekXplore, Donut Delights and WingFlight have been removed from the site.
+
+>>>>>>> 775ac49 (Updated portfolio website)
 Every image below is currently an SVG placeholder that shows its own replacement path. Export at the listed size (2× is fine) as WebP or JPG, then follow "Replacing images" in the README.
 
 | Placeholder file | Size (px) | Ratio | What to supply | Used on |
 |---|---|---|---|---|
+<<<<<<< HEAD
 | `assets/projects/travel-sailo/cover.svg` | 2100×900 | 2.33:1 | Cover image — hero screen or device mockup | Homepage card · case-study cover |
 | `assets/projects/jll/cover.svg` | 1600×1000 | 1.6:1 | Cover image — hero screen or device mockup | Homepage card · case-study cover |
 | `assets/projects/citibank/cover.svg` | 1600×1000 | 1.6:1 | Cover image — hero screen or device mockup | Homepage card · case-study cover |
@@ -53,6 +75,12 @@ Every image below is currently an SVG placeholder that shows its own replacement
 | `assets/projects/travel-sailo/bnpl.svg` | 1200×1500 | 0.8:1 | Payment-method selector with Tabby and Tamara options, plus the instalment preview (mobile, 4:5) | projects/travel-sailo.html · Buy Now, Pay Later — Tabby & Tamara |
 | `assets/projects/travel-sailo/wallet.svg` | 1200×1500 | 0.8:1 | Wallet balance and Shukran Points screen, and checkout with points applied (mobile, 4:5) | projects/travel-sailo.html · Travel Sailo Wallet & Shukran Points |
 | `assets/projects/travel-sailo/confirmation.svg` | 1200×1500 | 0.8:1 | Booking confirmation screen with status, pickup details and reference (mobile, 4:5) | projects/travel-sailo.html · Booking confirmation |
+=======
+| `assets/projects/jll/cover.svg` | 2000×1000 | 2.0:1 | Device mockup with real screens — export as transparent PNG/WebP mockup | Homepage project card |
+| `assets/projects/citibank/cover.svg` | 1200×900 | 1.33:1 | Device mockup with real screens — export as transparent PNG/WebP mockup | Homepage project card |
+| `assets/projects/edm-campaigns/cover.svg` | 1200×900 | 1.33:1 | Device mockup with real screens — export as transparent PNG/WebP mockup | Homepage project card |
+| `assets/projects/travel-sailo/bnpl.svg` | 1200×1500 | 0.8:1 | Payment-method selector with Tabby and Tamara options, plus the instalment preview (mobile, 4:5) | projects/travel-sailo.html · Buy Now, Pay Later — Tabby & Tamara |
+>>>>>>> 775ac49 (Updated portfolio website)
 | `assets/projects/travel-sailo/driver.svg` | 1200×1500 | 0.8:1 | Driver onboarding document checklist and status screen (mobile, 4:5) | projects/travel-sailo.html · Driver onboarding & RTA verification |
 | `assets/projects/travel-sailo/research.svg` | 2000×1000 | 2.0:1 | Affinity map or research board (16:8) | projects/travel-sailo.html · Research |
 | `assets/projects/travel-sailo/wireframes.svg` | 2400×1200 | 2.0:1 | Low-fidelity wireframes of the booking flow (2:1) | projects/travel-sailo.html · Wireframes |
@@ -70,6 +98,7 @@ Every image below is currently an SVG placeholder that shows its own replacement
 | `assets/projects/citibank/dashboard.svg` | 2400×1200 | 2.0:1 | Application status dashboard (2:1) | projects/citibank.html |
 | `assets/projects/citibank/regional.svg` | 2400×1200 | 2.0:1 | Multi-language layouts and campaign assets (2:1) | projects/citibank.html |
 | `assets/projects/citibank/cards.svg` | 2400×1200 | 2.0:1 | Card designs and Citi World Privileges pages (2:1) | projects/citibank.html |
+<<<<<<< HEAD
 | `assets/projects/foodiehub/hero.svg` | 2400×1200 | 2.0:1 | Hero visual — final key screens in a device mockup | projects/foodiehub.html (hero) |
 | `assets/projects/foodiehub/screens.svg` | 2400×1200 | 2.0:1 | Key app screens in device mockups (2:1) | projects/foodiehub.html |
 | `assets/projects/foodiehub/prototype.svg` | 2400×1350 | 1.78:1 | Prototype flow or recording (16:9) | projects/foodiehub.html |
@@ -82,6 +111,8 @@ Every image below is currently an SVG placeholder that shows its own replacement
 | `assets/projects/donut-delights/hero.svg` | 2400×1200 | 2.0:1 | Hero visual — final key screens in a device mockup | projects/donut-delights.html (hero) |
 | `assets/projects/donut-delights/screens.svg` | 2400×1200 | 2.0:1 | Flavour screens (2:1) | projects/donut-delights.html |
 | `assets/projects/donut-delights/motion.svg` | 2400×1350 | 1.78:1 | Motion recording / GIF of flavour transition (16:9) | projects/donut-delights.html |
+=======
+>>>>>>> 775ac49 (Updated portfolio website)
 | `assets/projects/edm-campaigns/hero.svg` | 2400×1200 | 2.0:1 | Hero visual — final key screens in a device mockup | projects/edm-campaigns.html (hero) |
 | `assets/projects/edm-campaigns/gyprock.svg` | 2400×1200 | 2.0:1 | Email designs (2:1) | projects/edm-campaigns.html |
 | `assets/projects/edm-campaigns/challenger.svg` | 2400×1200 | 2.0:1 | Email designs (2:1) | projects/edm-campaigns.html |

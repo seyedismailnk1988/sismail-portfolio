@@ -59,13 +59,27 @@
 
     /* ---------- Hide nav on scroll down, show on scroll up ---------- */
     var nav = document.querySelector(".nav");
+<<<<<<< HEAD
     var lastY = window.scrollY;
+=======
+    var heroEl = document.querySelector(".hero");
+    var lastY = window.scrollY;
+    function scrollState(y) {
+      if (nav) nav.classList.toggle("is-scrolled", y > 40);
+      if (heroEl) root.classList.toggle("past-hero", y > heroEl.offsetHeight * 0.7);
+    }
+    scrollState(lastY);
+>>>>>>> 775ac49 (Updated portfolio website)
     var ticking = false;
     window.addEventListener("scroll", function () {
       if (ticking) return;
       ticking = true;
       requestAnimationFrame(function () {
         var y = window.scrollY;
+<<<<<<< HEAD
+=======
+        scrollState(y);
+>>>>>>> 775ac49 (Updated portfolio website)
         if (nav && !(menu && menu.classList.contains("is-open"))) {
           nav.classList.toggle("is-hidden", y > lastY && y > 400);
         }
@@ -75,7 +89,11 @@
     }, { passive: true });
 
     /* ---------- Active section indicator (homepage) ---------- */
+<<<<<<< HEAD
     var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav__links a[href*='#']"));
+=======
+    var navLinks = Array.prototype.slice.call(document.querySelectorAll(".nav__links a[href*='#'], .rail a[href*='#']"));
+>>>>>>> 775ac49 (Updated portfolio website)
     var sections = navLinks
       .map(function (a) { var id = a.getAttribute("href").split("#")[1]; return id && document.getElementById(id); })
       .filter(Boolean);
