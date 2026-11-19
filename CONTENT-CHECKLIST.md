@@ -8,7 +8,7 @@ This lists what still needs **your** input before the site goes public. Everythi
 |---|------|------------------|------------------------|
 | 1 | **Years in design: 13+ vs 10+** | Hero, stats, About, OG image | Your brief and old portfolio say 13+. Your CV PDF says "10+ yrs product design". Pick one and update the CV to match. |
 | 2 | **Travel Sailo end date** | Timeline, case study | The site uses your confirmed **Aug 2025 – Aug 2026** and past tense. The CV PDF still says "Present" and "Currently leading". Update the CV. |
-| 3 | **Portfolio URL** | Metadata, CV | The CV lists `seyedismail.com`. Your brief lists `seyedismail.wixsite.com`. Metadata assumes `seyedismail.com`. |
+| 3 | **Portfolio URL** | Metadata, CV | ✅ Done — the website metadata and the CV (header and JLL case-study link) now use `seyed-ismail-portfolio.vercel.app`. If you later connect a custom domain, update both. |
 | 4 | **Rage Communications location** | Timeline | The CV says Dubai for 2011–2023. Confirm (the company is "Pvt. Ltd.", and part of this period may have been in India). |
 | 5 | **EDM dates vs Jamoons Digital** | EDM case study | The old portfolio dates the EDM work 2021–2022 "with Jamoons Digital", but the Jamoons role starts May 2023. Clarify (for example, a freelance collaboration). |
 | 6 | **JLL research figures** (28%, 90%, 46%, 65%, ~20% of listings) | JLL case study | From your old portfolio, not the CV. Confirm the figures and the sample size. |
